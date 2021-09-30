@@ -15,6 +15,10 @@ $color-header: #49416d;
   transform: translate(-50%, -50%);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   color: red;
   font-family: $Evil-Empire;
@@ -39,7 +43,7 @@ a.nav-link {
   background: #1f0f0f;
   min-height: 100vh;
   .container {
-    margin-top: 5vh;
+    padding-top: 100px;
   }
   h2 {
     font-size: 76px;
@@ -90,12 +94,20 @@ a.nav-link {
 
 .roadMap {
   background: #1f0f0f;
+  position: relative;
 
   min-height: 100vh;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .bgImg {
+    position: absolute;
+    right: -6%;
+    z-index: 1;
+    width: 45vw;
+  }
   h3 {
     font-size: 72px;
     margin-top: 60px;
@@ -307,7 +319,7 @@ a.nav-link {
   background: #1f0f0f;
   padding-top: 120px;
 
-  min-height: 100vh;
+  min-height: 60vh;
   h3 {
     font-size: 62px;
     padding-top: 90px;
@@ -325,7 +337,9 @@ a.nav-link {
   background: #1f0f0f;
   padding-top: 120px;
 
-  min-height: 100vh;
+  // min-height: 50vh;
+  padding-bottom: 137px;
+
   h3 {
     font-size: 62px;
     padding-top: 90px;
@@ -364,8 +378,18 @@ a.nav-link {
 .partners {
   background: #1f0f0f;
   padding-top: 120px;
+  padding-bottom: 240px;
+  // min-height: 100vh;
+  position: relative;
 
-  min-height: 100vh;
+  .bgPrtner {
+    position: absolute;
+    right: -6%;
+    // z-index: 1;
+    top: -20%;
+    width: 35vw;
+  }
+
   h3 {
     font-size: 62px;
     padding-top: 90px;
@@ -445,7 +469,21 @@ footer {
   }
 }
 
-@media only screen and (max-width: 700px) {
+.menuWrapper {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0px;
+  background: #1f0f0f;
+  z-index: 3;
+  top: 0px;
+  .navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 779px) {
   .OurGames .owl-carousel img.slider-img {
     width: 90%;
     // min-height: 200px;
@@ -531,5 +569,41 @@ footer {
   }
   section {
     min-height: unset !important;
+  }
+  .roadMap-card .listItem {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .roadMap-card {
+    height: unset;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .roadMap-card {
+    padding: 0;
+    > div {
+      padding: 30px;
+    }
+  }
+  .roadMap-card h5 {
+    font-size: 18px;
+    margin-bottom: 7px;
+    margin-top: 30px;
+  }
+
+  .roadMap-card .listItem {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  #timer .timerLabels {
+    font-size: 16px;
+  }
+
+  .sliderItemWrapper:after,
+  .sliderItemWrapper::before {
+    width: 47px;
+    height: 43px;
   }
 }
