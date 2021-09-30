@@ -35,7 +35,7 @@ a.nav-link {
     font-family: "Euclid Circular B", sans-serif; }
 
 .sectionTwo {
-  background: url("/imgs/bg1.png");
+  background: url("../imgs/bg1.png");
   min-height: 100vh;
   color: #fff;
   display: flex;
@@ -76,7 +76,7 @@ a.nav-link {
     margin-top: 0;
     margin-bottom: 50px; }
   .roadMap-card {
-    background: url("/imgs/roadmapCardBg.svg");
+    background: url("../imgs/roadmapCardBg.svg");
     height: 343px;
     background-size: 100% 100%;
     padding: 56px; }
@@ -193,7 +193,7 @@ a.nav-link {
   .sliderItemWrapper .owl-nav {
     position: absolute; }
   .sliderItemWrapper:after {
-    background: url("/imgs/topRight.svg");
+    background: url("../imgs/topRight.svg");
     position: absolute;
     right: -10px;
     top: -10px;
@@ -202,7 +202,7 @@ a.nav-link {
     width: 81px;
     height: 76px; }
   .sliderItemWrapper::before {
-    background: url("/imgs/bottomleft.svg");
+    background: url("../imgs/bottomleft.svg");
     position: absolute;
     left: -10px;
     bottom: -10px;
@@ -271,7 +271,7 @@ a.nav-link {
       position: absolute;
       left: 50%;
       top: -6px;
-      background: url("/imgs/aboutSlider.svg");
+      background: url("../imgs/aboutSlider.svg");
       background-size: 100%;
       transform: translateX(-50%);
       height: 30px;
