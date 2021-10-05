@@ -8,6 +8,17 @@ $color-black: #001f2b;
 $color-wight: #fff;
 $color-blue: #009bd6;
 $color-header: #49416d;
+button {
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+body {
+  background: #1f0f0f;
+}
 
 @mixin before-after {
   content: "";
@@ -40,8 +51,11 @@ a.nav-link {
 }
 
 .fistSection {
-  background: #1f0f0f;
+  background: url("../imgs/bg11.svg"), #1f0f0f;
   min-height: 100vh;
+  background-position: 35% 15%;
+  background-repeat: no-repeat;
+  background-size: 90vh;
   .container {
     padding-top: 100px;
   }
@@ -93,7 +107,7 @@ a.nav-link {
 }
 
 .roadMap {
-  background: #1f0f0f;
+  // background: #1f0f0f;
   position: relative;
 
   min-height: 100vh;
@@ -141,9 +155,12 @@ a.nav-link {
 
 .presale {
   background: #1f0f0f;
-
   min-height: 100vh;
   padding-top: 180px;
+  background-size: 38vw;
+  background-repeat: no-repeat;
+  background-position: 30%;
+
   &_card {
     background: url("../imgs/presaleImg.svg");
     width: 100px;
@@ -182,6 +199,10 @@ a.nav-link {
   }
 }
 .sliderSection {
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    // display: flex !important;
+  }
   h3 {
     font-size: 62px;
     padding-top: 90px;
@@ -237,7 +258,7 @@ a.nav-link {
   }
 }
 .sliderSection {
-  background: #1f0f0f;
+  // background: #1f0f0f;
   padding-top: 120px;
 
   min-height: 100vh;
@@ -316,7 +337,7 @@ a.nav-link {
 }
 
 .tokenomics {
-  background: #1f0f0f;
+  // background: #1f0f0f;
   padding-top: 120px;
 
   min-height: 60vh;
@@ -353,11 +374,23 @@ a.nav-link {
   }
   .item {
     padding-top: 20px;
+    h5 {
+      color: #fff;
+      font-size: 27px;
+      margin-top: 19px;
+      font-weight: 400;
+      margin-bottom: 0px;
+    }
+    p {
+      color: #c58510;
+      font-weight: 400;
+    }
   }
   .aboutUs_sliderItemWrapper {
     background-image: linear-gradient(#fbef7f, #c3780a);
     border-radius: 8px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;

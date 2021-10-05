@@ -1,5 +1,13 @@
 @import url("http://fonts.cdnfonts.com/css/evil-empire");
 @import url("http://fonts.cdnfonts.com/css/euclid-circular-b");
+button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none; }
+
+body {
+  background: #1f0f0f; }
+
 body {
   overflow-x: hidden; }
 
@@ -21,8 +29,11 @@ a.nav-link {
     transition: 0.3s; }
 
 .fistSection {
-  background: #1f0f0f;
-  min-height: 100vh; }
+  background: url("../imgs/bg11.svg"), #1f0f0f;
+  min-height: 100vh;
+  background-position: 35% 15%;
+  background-repeat: no-repeat;
+  background-size: 90vh; }
   .fistSection .container {
     padding-top: 100px; }
   .fistSection h2 {
@@ -65,7 +76,6 @@ a.nav-link {
       content: ""; }
 
 .roadMap {
-  background: #1f0f0f;
   position: relative;
   min-height: 100vh;
   color: #fff;
@@ -105,7 +115,10 @@ a.nav-link {
 .presale {
   background: #1f0f0f;
   min-height: 100vh;
-  padding-top: 180px; }
+  padding-top: 180px;
+  background-size: 38vw;
+  background-repeat: no-repeat;
+  background-position: 30%; }
   .presale_card {
     background: url("../imgs/presaleImg.svg");
     width: 100px;
@@ -183,7 +196,6 @@ a.nav-link {
       justify-content: center; }
 
 .sliderSection {
-  background: #1f0f0f;
   padding-top: 120px;
   min-height: 100vh; }
   .sliderSection h3 {
@@ -241,7 +253,6 @@ a.nav-link {
       margin-left: 20px; }
 
 .tokenomics {
-  background: #1f0f0f;
   padding-top: 120px;
   min-height: 60vh; }
   .tokenomics h3 {
@@ -271,6 +282,15 @@ a.nav-link {
     text-align: left; }
   .aboutUs .item {
     padding-top: 20px; }
+    .aboutUs .item h5 {
+      color: #fff;
+      font-size: 27px;
+      margin-top: 19px;
+      font-weight: 400;
+      margin-bottom: 0px; }
+    .aboutUs .item p {
+      color: #c58510;
+      font-weight: 400; }
   .aboutUs .aboutUs_sliderItemWrapper {
     background-image: linear-gradient(#fbef7f, #c3780a);
     border-radius: 8px;
