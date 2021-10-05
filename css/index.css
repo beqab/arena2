@@ -29,11 +29,10 @@ a.nav-link {
     transition: 0.3s; }
 
 .fistSection {
-  background: url("../imgs/bg11.svg"), #1f0f0f;
+  background: url("../imgs/bg11.svg");
   min-height: 100vh;
   background-position: 35% 15%;
-  background-repeat: no-repeat;
-  background-size: 90vh; }
+  background-repeat: no-repeat; }
   .fistSection .container {
     padding-top: 100px; }
   .fistSection h2 {
@@ -95,10 +94,28 @@ a.nav-link {
     margin-top: 0;
     margin-bottom: 50px; }
   .roadMap-card {
-    background: url("../imgs/roadmapCardBg.svg");
-    height: 343px;
+    background: linear-gradient(#fbef7f, #c3780a);
+    border-radius: 5px;
+    height: 303px;
     background-size: 100% 100%;
-    padding: 56px; }
+    padding: 10px;
+    position: relative; }
+    .roadMap-card:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 36px;
+      width: 168px;
+      background: url("../imgs/cardIMg.svg");
+      background-size: 100%;
+      top: -10px; }
+    .roadMap-card > div {
+      background: linear-gradient(#915e3f, #6a473c);
+      border-radius: 5px;
+      padding: 5px;
+      height: 100%;
+      padding: 30px; }
     .roadMap-card h5 {
       font-size: 26px;
       margin-bottom: 20px; }
@@ -113,10 +130,8 @@ a.nav-link {
         width: 18px; }
 
 .presale {
-  background: #1f0f0f;
   min-height: 100vh;
   padding-top: 180px;
-  background-size: 38vw;
   background-repeat: no-repeat;
   background-position: 30%; }
   .presale_card {
@@ -384,14 +399,84 @@ footer {
   z-index: 10;
   width: 100%;
   left: 0px;
-  background: #1f0f0f;
   z-index: 3;
   top: 0px; }
+  .menuWrapper.scroll {
+    background: #1f0f0f;
+    transition: 0.3s; }
+    .menuWrapper.scroll .navbar-brand img {
+      transition: 0.3s;
+      max-width: 90px !important; }
+  .menuWrapper .navbar-brand img {
+    transition: 0.3s; }
   .menuWrapper .navbar {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
 
+@media only screen and (max-width: 1184px) {
+  .fistSection h2 {
+    font-size: 58px; } }
+
+@media only screen and (max-width: 975px) {
+  .fistSection h2 {
+    font-size: 42px; }
+  a.nav-link {
+    font-size: 19px; }
+  .sectionTwo p {
+    font-size: 16px; }
+  .sectionTwo h3 {
+    font-size: 58px; }
+  .roadMap .container {
+    max-width: 920px !important; }
+  .roadMap-card .listItem {
+    font-size: 13px;
+    margin-bottom: 5px; }
+  #timer .timerLabels {
+    font-size: 16px; }
+  #timer {
+    align-items: center; }
+  .sliderItemWrapper:after,
+  .sliderItemWrapper::before {
+    width: 47px;
+    height: 43px; }
+  .presale_cards {
+    max-width: 500px;
+    margin: auto; }
+  .partners {
+    padding-top: 20px; } }
+
 @media only screen and (max-width: 779px) {
+  .menuWrapper {
+    background: #492626 !important; }
+  .roadMap-card {
+    margin-bottom: 30px; }
+  .navbar-collapse.show .bottomLines {
+    background-image: linear-gradient(#fbef7f, #c3780a);
+    height: 50px;
+    width: calc(100% + 30px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .navbar-collapse.show .bottomLines::before {
+      content: "";
+      left: 0px;
+      bottom: 0px;
+      position: absolute;
+      width: 128px;
+      height: 113px;
+      background: url("../imgs/menuImg.svg"); }
+    .navbar-collapse.show .bottomLines::after {
+      content: "";
+      right: -3px;
+      bottom: 0px;
+      position: absolute;
+      width: 128px;
+      height: 113px;
+      background: url("../imgs/menuimg2.svg"); }
+  .navbar-nav {
+    padding-bottom: 67px; }
   .OurGames .owl-carousel img.slider-img {
     width: 90%; }
   footer .sub form {
@@ -465,13 +550,4 @@ footer {
   .roadMap-card h5 {
     font-size: 18px;
     margin-bottom: 7px;
-    margin-top: 30px; }
-  .roadMap-card .listItem {
-    font-size: 13px;
-    margin-bottom: 5px; }
-  #timer .timerLabels {
-    font-size: 16px; }
-  .sliderItemWrapper:after,
-  .sliderItemWrapper::before {
-    width: 47px;
-    height: 43px; } }
+    margin-top: 30px; } }
