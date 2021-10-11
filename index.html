@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
   <header class="menuWrapper">
      <div style="max-width: 1400px;" class="container-fluid ">
       <nav class="navbar navbar-expand-md  ">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" data-aos="comesLeft" href="#">
           <h1>
             <img style="max-width: 116px; height: 60px; margin-top: 3px;" src="./imgs/logo.svg" />
           </h1>
@@ -51,8 +52,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
           <div class="bottomLines"></div>
-
-          <ul class="navbar-nav navvIggg">
+          <ul data-aos="example-anim3" class="navbar-nav navvIggg">
             <li class="nav-item">
               <a class="nav-link" href="/#Home">Home</a>
             </li>
@@ -84,15 +84,15 @@
   <div class="container">
      <div class="row">
        <div class="col-md-5 d-flex justify-content-center flex-column">
-<h2>
+<h2 data-aos="comesLeft">
   Arena awaits <br/> you, <span>my lord</span> 
 </h2>
-<p class="text-center text-md-left">
+<p data-aos="bottomToTop" class="text-center text-md-left">
   Most extreme place you’ve experienced in your life, many characters, amazing battlefield and your gameplay is what it takes to be the best!
 </p>
 <div class="d-flex align-items-center flex-column flex-lg-row">
-<a class="text-center text-md-left" href="#">
-<svg width="208" height="82" viewBox="0 0 208 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<a data-aos="comesLeft" class="text-center text-md-left" href="#">
+<svg  width="208" height="82" viewBox="0 0 208 82" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect y="3" width="208" height="68" rx="8" fill="url(#paint0_linear)"/>
   <g filter="url(#filter0_i)">
   <rect x="4" y="7" width="200" height="60" rx="6" fill="url(#paint1_linear)"/>
@@ -161,8 +161,8 @@
   </svg>
 </a>
 <div class="socialList d-flex justify-content-center align-items-end mt-3 mt-lg-0 ml-0 ml-lg-5 mb-1">
-  <a class="mr-3" href="">
-   <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <a  class="mr-3" href="">
+   <svg data-aos="socialAnimation" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
      <rect opacity="0.5" width="52" height="52" rx="26" fill="url(#paint0_linear)"/>
      <g clip-path="url(#clip0)">
      <path d="M31.9991 14.005L28.8868 14C25.3904 14 23.1308 16.3183 23.1308 19.9064V22.6296H20.0016C19.7312 22.6296 19.5122 22.8488 19.5122 23.1192V27.0649C19.5122 27.3353 19.7314 27.5542 20.0016 27.5542H23.1308V37.5104C23.1308 37.7808 23.3498 37.9998 23.6202 37.9998H27.7029C27.9733 37.9998 28.1922 37.7805 28.1922 37.5104V27.5542H31.851C32.1214 27.5542 32.3404 27.3353 32.3404 27.0649L32.3419 23.1192C32.3419 22.9894 32.2902 22.865 32.1986 22.7732C32.1069 22.6813 31.9821 22.6296 31.8523 22.6296H28.1922V20.3211C28.1922 19.2115 28.4567 18.6482 29.902 18.6482L31.9986 18.6475C32.2687 18.6475 32.4877 18.4283 32.4877 18.1581V14.4944C32.4877 14.2245 32.269 14.0055 31.9991 14.005Z" fill="white"/>
@@ -180,7 +180,7 @@
      
   </a>
   <a class="mr-3" href="">
-   <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg data-aos="socialAnimation"  width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
      <rect opacity="0.5" width="52" height="52" rx="26" fill="url(#paint0_linear)"/>
      <g clip-path="url(#clip0)">
      <path d="M37.9766 21.0561C37.9204 19.7809 37.7141 18.9042 37.4187 18.1445C37.114 17.3381 36.6451 16.6162 36.0309 16.016C35.4307 15.4065 34.704 14.9329 33.907 14.6329C33.1429 14.3375 32.2708 14.1313 30.9956 14.0751C29.7109 14.0141 29.303 14 26.0446 14C22.7861 14 22.3783 14.0141 21.0983 14.0703C19.8231 14.1266 18.9464 14.333 18.1869 14.6282C17.3803 14.9329 16.6584 15.4018 16.0583 16.016C15.4488 16.6162 14.9753 17.3429 14.6752 18.1399C14.3798 18.9042 14.1735 19.7761 14.1173 21.0513C14.0563 22.336 14.0422 22.7439 14.0422 26.0023C14.0422 29.2608 14.0563 29.6686 14.1126 30.9486C14.1688 32.2238 14.3752 33.1005 14.6706 33.8602C14.9753 34.6666 15.4488 35.3885 16.0583 35.9887C16.6584 36.5982 17.3851 37.0718 18.1821 37.3718C18.9464 37.6672 19.8183 37.8734 21.0937 37.9296C22.3735 37.986 22.7815 37.9999 26.04 37.9999C29.2984 37.9999 29.7063 37.986 30.9863 37.9296C32.2615 37.8734 33.1382 37.6672 33.8977 37.3718C35.5106 36.7482 36.7858 35.4729 37.4094 33.8602C37.7046 33.096 37.911 32.2238 37.9672 30.9486C38.0235 29.6686 38.0376 29.2608 38.0376 26.0023C38.0376 22.7439 38.0328 22.336 37.9766 21.0561ZM35.8153 30.8549C35.7637 32.027 35.5668 32.6599 35.4027 33.0819C34.9994 34.1274 34.1696 34.9572 33.1241 35.3605C32.7021 35.5246 32.0646 35.7215 30.8971 35.7729C29.6312 35.8293 29.2516 35.8433 26.0493 35.8433C22.8471 35.8433 22.4627 35.8293 21.2014 35.7729C20.0293 35.7215 19.3964 35.5246 18.9744 35.3605C18.4541 35.1682 17.9805 34.8634 17.5961 34.4649C17.1976 34.0758 16.8928 33.6069 16.7005 33.0866C16.5364 32.6647 16.3396 32.027 16.2881 30.8596C16.2317 29.5937 16.2178 29.2139 16.2178 26.0117C16.2178 22.8095 16.2317 22.425 16.2881 21.1639C16.3396 19.9918 16.5364 19.3589 16.7005 18.9369C16.8928 18.4165 17.1976 17.943 17.6009 17.5584C17.9898 17.1599 18.4587 16.8552 18.9792 16.6631C19.4011 16.499 20.0388 16.3021 21.2062 16.2504C22.472 16.1942 22.8519 16.1801 26.0539 16.1801C29.2609 16.1801 29.6405 16.1942 30.9018 16.2504C32.0739 16.3021 32.7069 16.499 33.1288 16.6631C33.6491 16.8552 34.1227 17.1599 34.5072 17.5584C34.9057 17.9476 35.2104 18.4165 35.4027 18.9369C35.5668 19.3589 35.7637 19.9964 35.8153 21.1639C35.8716 22.4298 35.8857 22.8095 35.8857 26.0117C35.8857 29.2139 35.8716 29.589 35.8153 30.8549Z" fill="white"/>
@@ -200,7 +200,7 @@
      
   </a>
   <a class="mr-3" href="">
-   <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg data-aos="socialAnimation"  width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
      <rect opacity="0.5" width="52" height="52" rx="26" fill="url(#paint0_linear)"/>
      <path d="M38 18.5585C37.1075 18.95 36.1565 19.2095 35.165 19.3355C36.185 18.7265 36.9635 17.7695 37.3295 16.616C36.3785 17.183 35.3285 17.5835 34.2095 17.807C33.3065 16.8455 32.0195 16.25 30.6155 16.25C27.8915 16.25 25.6985 18.461 25.6985 21.1715C25.6985 21.5615 25.7315 21.9365 25.8125 22.2935C21.722 22.094 18.1025 20.1335 15.671 17.147C15.2465 17.8835 14.9975 18.7265 14.9975 19.634C14.9975 21.338 15.875 22.8485 17.183 23.723C16.3925 23.708 15.617 23.4785 14.96 23.117C14.96 23.132 14.96 23.1515 14.96 23.171C14.96 25.562 16.6655 27.548 18.902 28.0055C18.5015 28.115 18.065 28.1675 17.612 28.1675C17.297 28.1675 16.979 28.1495 16.6805 28.0835C17.318 30.032 19.127 31.4645 21.278 31.511C19.604 32.8205 17.4785 33.6095 15.1775 33.6095C14.774 33.6095 14.387 33.5915 14 33.542C16.1795 34.9475 18.7625 35.75 21.548 35.75C30.602 35.75 35.552 28.25 35.552 21.749C35.552 21.5315 35.5445 21.3215 35.534 21.113C36.5105 20.42 37.331 19.5545 38 18.5585Z" fill="white"/>
      <defs>
@@ -831,9 +831,12 @@
    </div>
 
  </footer>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      
     <script>
       $(document).ready(function(){
+        AOS.init();
 
 window.addEventListener("scroll", () => {
   // debugger

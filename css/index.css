@@ -551,3 +551,60 @@ footer {
     font-size: 18px;
     margin-bottom: 7px;
     margin-top: 30px; } }
+
+@media only screen and (min-width: 1079px) {
+  [data-aos="example-anim3"] {
+    opacity: 0;
+    transform: translateX(100%);
+    transition-duration: 1s !important; }
+    [data-aos="example-anim3"].aos-animate {
+      opacity: 1;
+      transform: translateX(0); }
+  [data-aos="comesLeft"] {
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-fill-mode: forwards; }
+    [data-aos="comesLeft"].aos-animate {
+      animation-name: comesLeft;
+      animation-timing-function: ease-out; }
+  [data-aos="bottomToTop"] {
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+    transform: translate(10%, 100%);
+    opacity: 0;
+    animation-fill-mode: forwards; }
+    [data-aos="bottomToTop"].aos-animate {
+      animation-name: bottomToTop;
+      animation-timing-function: ease-out; }
+  [data-aos="socialAnimation"] {
+    animation-duration: 0.6s;
+    transform: scale(0) rotate(90deg);
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards; }
+    [data-aos="socialAnimation"].aos-animate {
+      animation-name: socialAnimation;
+      animation-timing-function: ease-out; } }
+
+@keyframes comesLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes socialAnimation {
+  from {
+    transform: scale(0) rotate(90deg); }
+  to {
+    transform: scale(1) rotate(0deg); } }
+
+@keyframes bottomToTop {
+  from {
+    transform: translate(0%, 100%);
+    opacity: 0; }
+  to {
+    transform: translate(0);
+    opacity: 1; } }
