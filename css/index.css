@@ -299,7 +299,7 @@ a.nav-link {
     padding-top: 20px; }
     .aboutUs .item h5 {
       color: #fff;
-      font-size: 27px;
+      font-size: 24px;
       margin-top: 19px;
       font-weight: 400;
       margin-bottom: 0px; }
@@ -644,7 +644,8 @@ footer {
     animation-timing-function: ease-out; }
   [data-aos="partnersAnimate"] .owl-stage-outer {
     animation-fill-mode: forwards;
-    transform: translate(-100%); }
+    transform: translate(-100%);
+    opacity: 0; }
   [data-aos="partnersAnimate"].aos-animate .owl-stage-outer {
     animation-duration: 1s;
     animation-name: comesLeft;

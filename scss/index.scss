@@ -397,7 +397,7 @@ a.nav-link {
     padding-top: 20px;
     h5 {
       color: #fff;
-      font-size: 27px;
+      font-size: 24px;
       margin-top: 19px;
       font-weight: 400;
       margin-bottom: 0px;
@@ -896,6 +896,7 @@ footer {
       animation-fill-mode: forwards;
       transform: translate(-100%);
       // animation-delay: 1s;
+      opacity: 0;
     }
     &.aos-animate {
       .owl-stage-outer {
