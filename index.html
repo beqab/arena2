@@ -31,7 +31,7 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <div id="Home" class="fistSection">
+  <div  class="fistSection">
   <header class="menuWrapper">
      <div style="max-width: 1400px;" class="container-fluid ">
       <nav class="navbar navbar-expand-md  ">
@@ -53,33 +53,33 @@
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
           <div class="bottomLines"></div>
           <ul data-aos="example-anim3" class="navbar-nav navvIggg">
-            <li class="nav-item">
-              <a class="nav-link" href="/#Home">Home</a>
+            <li data-Link="Home" class="nav-item">
+              <a  class="nav-link" href="#Home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#About">About us</a>
+            <li data-Link="About" class="nav-item">
+              <a  class="nav-link" href="#About">About us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#Roadmap">Roadmap</a>
+            <li data-Link="Roadmap" class="nav-item">
+              <a class="nav-link" href="#Roadmap">Roadmap</a>
             </li>   
-            <li class="nav-item">
-              <a class="nav-link" href="/#design">design concept</a>
+            <li data-Link="design" class="nav-item">
+              <a class="nav-link" href="#design">design concept</a>
             </li>   
-            <li class="nav-item">
-              <a class="nav-link" href="/#presale">presale</a>
+            <li data-Link="presale" class="nav-item">
+              <a class="nav-link" href="#presale">presale</a>
             </li>   
-            <li class="nav-item">
-              <a class="nav-link" href="/#team">team</a>
+            <li data-Link="team" class="nav-item">
+              <a class="nav-link" href="#team">team</a>
             </li>   
-            <li class="nav-item">
-              <a class="nav-link" href="/#partners">partners</a>
+            <li data-Link="partners" class="nav-item">
+              <a class="nav-link" href="#partners">partners</a>
             </li> 
           </ul>
         </div>  
       </nav>
     </div>
   </header>
-  <section >
+  <section id="Home" >
 
   <div class="container">
      <div class="row">
@@ -218,7 +218,7 @@
 </div>
   
        </div>
-       <div  class="col-md-7">
+       <div  class="col-md-7 text-right">
  <img data-aos="bottomToTop2" class="knitSvg" style="max-width: 120%;" src="./imgs/knights.svg" />
        </div>
 
@@ -383,7 +383,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-5 timerBlock text-center text-lg-left"> 
-            <img style="max-width: 100%;" src="./imgs/presaleKights.svg" />
+            <img style="max-width: 100%;" class="cnight2" src="./imgs/presaleKights.svg" />
              <div data-aos="bottomToTop" id="timer" class="d-flex">
                <div class="timerWrapper">
             <div id="days"></div> <span class="dot"> : </span>
@@ -437,7 +437,7 @@
        </div>
        <span class="label">AMOUNT OF TOKENS</span>
        </div>
-       <div  data-aos="bottomToTop" class="d-felx align-items-center mt-5">
+       <div  data-aos="bottomToTop" class="d-felx align-items-center mt-4 mt-xlg-5">
         <svg width="148"  viewBox="0 0 208 82" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect y="3" width="208" height="68" rx="8" fill="url(#paint0_linear)"/>
           <g filter="url(#filter0_i)">
@@ -519,10 +519,10 @@
 
     
     <section data-aos="designAnimate" id="design" class="sliderSection">
-      <div class="container">
+      <div style="max-width: 1000px;" class="container">
 
       <h3 data-aos="bottomToTop4">Design Concept</h3>
-      <div class="owl-carousel owl-theme sliderSection_owl">
+      <div  class="owl-carousel owl-theme sliderSection_owl">
         <div class="item">
           <div class="sliderItemWrapper">
  <img src="./imgs/Rectangle.png" />
@@ -1017,14 +1017,32 @@ setInterval(function() { makeTimer(); }, 1000);
 $(function() {
     $(window).on('scroll',function(){
         var WindowTop = $(window).scrollTop();
-        $('section').each(function(i){
+        $('section').each(function(i, m){
             if(WindowTop > $(this).offset().top - 50 && 
                WindowTop < $(this).offset().top + $(this).outerHeight(true)
               ){
+                console.log(WindowTop, $(this).offset().top , WindowTop +  $(this).innerHeight(), "sss" , WindowTop >  $(this).offset().top ,  WindowTop ,  WindowTop +  $(this).innerHeight())
                 // debugger
                 $('.navvIggg > li > a').removeClass('active');
-     $('.navvIggg li').eq(i).find('a').addClass('active');
+                if(WindowTop >  $(this).offset().top - 50 &&  WindowTop < WindowTop +  $(this).innerHeight()){
+                  console.log("bla bla")
+                  // $('.navvIggg > li > a').addClass('active');
+                  console.log(i, "iii", m.getAttribute("id"),)
+                  $('.navvIggg > li').each(function(e,el){
+                    console.log(el.getAttribute("data-Link"), m.getAttribute("id") , "lll")
+                    if(el.getAttribute("data-Link") === m.getAttribute("id") ){
+                                console.log(el.getAttribute("data-Link"), m.getAttribute("id") , "lll")
+                              $(this).find('a').addClass('active');
+                              }
+                  })
+      // $('.navvIggg li').eq(i).find('a').addClass('active');
+
+                }
+                // $('.navvIggg > li > a').addClass('active');
+    //  $('.navvIggg li').eq(i).find('a').addClass('active');
+    
             }
+           
         });
     });
 		  $('a[href*=\\#]:not([href=\\#])').click(function() {

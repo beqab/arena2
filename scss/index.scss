@@ -15,6 +15,9 @@ button {
     box-shadow: none;
   }
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   background: #1f0f0f;
@@ -44,6 +47,9 @@ a.nav-link {
   font-family: $Evil-Empire;
   margin-left: 15px;
   display: inline-block;
+  &.active {
+    color: #fff;
+  }
   &:hover {
     color: #fff;
     transition: 0.3s;
@@ -737,6 +743,34 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1369px) {
+  .fistSection .container {
+    padding-top: 50px;
+  }
+
+  .partners .bgPrtner {
+    max-width: 355px;
+    right: 0%;
+    top: 10%;
+  }
+  .menuWrapper {
+    position: unset;
+  }
+  .knitSvg {
+    max-width: 100% !important;
+    margin-left: auto;
+  }
+  .cnight2 {
+    max-width: 80% !important;
+  }
+  .presale h3 {
+    padding-top: 0;
+  }
+  .owl-carousel .owl-item img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
 @media only screen and (max-width: 479px) {
   .roadMap-card {
     padding: 0;

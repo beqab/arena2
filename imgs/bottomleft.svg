@@ -11,6 +11,36 @@
       fill="url(#paint0_linear)"
     />
 </g>
+<circle
+    cx="102.5"
+    cy="92.5"
+    r="7"
+    transform="rotate(-180 102.5 92.5)"
+    fill="#403D50"
+  />
+<rect
+    x="99.1045"
+    y="98.7026"
+    width="2"
+    height="14"
+    transform="rotate(-143.173 99.1045 98.7026)"
+    fill="#22212B"
+  />
+<circle
+    cx="29.5001"
+    cy="20.5002"
+    r="7"
+    transform="rotate(117.699 29.5001 20.5002)"
+    fill="#403D50"
+  />
+<rect
+    x="33.4136"
+    y="26.3896"
+    width="2"
+    height="14"
+    transform="rotate(154.526 33.4136 26.3896)"
+    fill="#22212B"
+  />
 <defs>
 <filter
       id="filter0_d"
