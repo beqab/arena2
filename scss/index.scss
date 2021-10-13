@@ -754,29 +754,70 @@ footer {
 @media only screen and (min-width: 1079px) {
   [data-aos="example-anim3"] {
     opacity: 0;
+    // transform: translateX(100%);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     transform: translateX(100%);
-    transition-duration: 1s !important;
+    opacity: 0;
+    animation-timing-function: ease-out;
+
+    &.dely2 {
+      animation-delay: 0.2s;
+    }
     &.aos-animate {
-      opacity: 1;
-      transform: translateX(0);
+      animation-timing-function: ease-out;
+
+      animation-name: comesRight;
+    }
+  }
+
+  [data-aos="animanim"] {
+    // transform: translateX(100%);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: rotate(-8deg) translateY(60px);
+    animation-timing-function: ease-out;
+
+    &.dely2 {
+      animation-delay: 0.2s;
+    }
+
+    &.aos-animate {
+      animation-timing-function: ease-out;
+
+      animation-name: animanim;
     }
   }
 
   [data-aos="comesLeft"] {
-    animation-duration: 0.6s;
-    animation-delay: 0.4s;
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
     transform: translateX(-100%);
     opacity: 0;
     animation-fill-mode: forwards;
+    &.dely2 {
+      animation-delay: 0.2s;
+    }
+    &.titleText::before {
+      bottom: -92px;
+      opacity: 0;
+    }
     &.aos-animate {
       animation-name: comesLeft;
       animation-timing-function: ease-out;
+      &.titleText::before {
+        animation-name: bottomLine;
+        animation-duration: 0.6s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+      }
     }
   }
 
   [data-aos="bottomToTop"] {
-    animation-duration: 0.6s;
-    animation-delay: 0.4s;
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
     transform: translate(10%, 100%);
     opacity: 0;
     animation-fill-mode: forwards;
@@ -786,6 +827,107 @@ footer {
     }
   }
 
+  [data-aos="bottomToTop2"] {
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
+    transform: translate(10%, 100%);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: bottomToTop2;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="bottomToTop3"] {
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
+    transform: translate(20%, 20%);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: bottomToTop3;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="bottomToTop4"] {
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
+    transform: translate(-20%, 20%);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: bottomToTop4;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="bottomToTop2"] {
+    animation-duration: 1s;
+    // animation-delay: 0.4s;
+    transform: translate(20%, 10%);
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: bottomToTop2;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="teamAnimatin"] {
+    .owl-stage-outer {
+      animation-fill-mode: forwards;
+      transform: translate(-10%, 20%);
+      animation-delay: 0.2s;
+    }
+    &.aos-animate {
+      .owl-stage-outer {
+        animation-duration: 1s;
+        animation-name: bottomToTop;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+
+  [data-aos="partnersAnimate"] {
+    .owl-stage-outer {
+      animation-fill-mode: forwards;
+      transform: translate(-100%);
+      // animation-delay: 1s;
+    }
+    &.aos-animate {
+      .owl-stage-outer {
+        animation-duration: 1s;
+        animation-name: comesLeft;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+
+  [data-aos="designAnimate"] {
+    .owl-nav {
+      animation-fill-mode: forwards;
+      transform: translate(10%, 20%);
+    }
+    .owl-stage-outer {
+      animation-fill-mode: forwards;
+      transform: translate(-10%, 20%);
+    }
+    &.aos-animate {
+      .owl-nav {
+        animation-duration: 1s;
+        animation-name: bottomToTop3;
+        animation-timing-function: ease-out;
+      }
+      .owl-stage-outer {
+        animation-duration: 1s;
+        animation-name: bottomToTop4;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
   [data-aos="socialAnimation"] {
     animation-duration: 0.6s;
     transform: scale(0) rotate(90deg);
@@ -799,9 +941,34 @@ footer {
   }
 }
 
+@keyframes bottomLine {
+  0% {
+    bottom: -100px;
+    left: -30px;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: -20px;
+    left: 0px;
+    opacity: 1;
+  }
+}
+
 @keyframes comesLeft {
   from {
     transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes comesRight {
+  from {
+    transform: translateX(100%);
     opacity: 0;
   }
   to {
@@ -827,5 +994,47 @@ footer {
   to {
     transform: translate(0);
     opacity: 1;
+  }
+}
+
+@keyframes bottomToTop2 {
+  from {
+    transform: translate(0%, 10%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomToTop3 {
+  from {
+    transform: translate(10%, 20%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomToTop4 {
+  from {
+    transform: translate(-10%, 20%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animanim {
+  from {
+    transform: rotate(-8deg) translateY(60px);
+  }
+  to {
+    transform: rotate(0deg) translateY(0px);
   }
 }
