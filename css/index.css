@@ -65,7 +65,8 @@ a.nav-link {
   .sectionTwo p {
     margin-bottom: 20px;
     font-size: 18px;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 1px; }
   .sectionTwo h3 {
     font-size: 72px;
     margin-top: 60px;
