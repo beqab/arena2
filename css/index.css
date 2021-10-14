@@ -565,6 +565,19 @@ footer {
 .sliderSection .container {
   max-width: 1000px; }
 
+.socialIcon {
+  background: linear-gradient(#fbef7f86, #c3790a7e);
+  border-radius: 61px;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center; }
+  .socialIcon svg {
+    width: 23px;
+    height: auto !important; }
+
 @media only screen and (max-width: 1369px) {
   .fistSection .container {
     padding-top: 50px; }
