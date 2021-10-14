@@ -607,8 +607,6 @@ footer {
     max-width: 355px;
     right: 0%;
     top: 10%; }
-  .menuWrapper {
-    position: unset; }
   .knitSvg {
     max-width: 100% !important;
     margin-left: auto; }
@@ -619,6 +617,10 @@ footer {
   .owl-carousel .owl-item img {
     max-height: 500px;
     object-fit: cover; } }
+
+@media only screen and (max-width: 768px) {
+  .fistSection .container {
+    padding-top: 90px; } }
 
 @media only screen and (max-width: 479px) {
   .roadMap-card {

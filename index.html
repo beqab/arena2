@@ -913,7 +913,18 @@
      
     <script>
       $(document).ready(function(){
+
+
         AOS.init();
+
+        $('.navvIggg li').each(function() {
+          if(window.innerWidth < 769){
+            $(this).find("a").on("click",function(){
+            $(".navbar-toggler").click()
+          })
+          }
+          
+        })
 
 window.addEventListener("scroll", () => {
   // debugger
