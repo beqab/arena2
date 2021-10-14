@@ -81,6 +81,33 @@ a.nav-link {
   }
 }
 
+.sliderArrow {
+  width: 57px;
+  height: 57px;
+  border-radius: 57px;
+  border: 2px solid #c58510;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.right {
+    svg {
+      transform: rotate(180deg);
+    }
+    margin-left: 15px;
+  }
+  &:hover {
+    border: none;
+
+    background: linear-gradient(#cebe2d, #c3780a);
+    svg path {
+      fill: #000;
+    }
+  }
+  svg {
+    height: 14px;
+  }
+}
+
 .sectionTwo {
   background: url("../imgs/bg1.png");
   min-height: 100vh;
