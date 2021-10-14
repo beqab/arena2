@@ -226,13 +226,19 @@ a.nav-link {
   }
 }
 .sliderSection {
+  margin-top: 30px;
+  position: relative;
+  .shild {
+    position: absolute;
+    max-width: 34vw;
+  }
   .owl-carousel .owl-dots.disabled,
   .owl-carousel .owl-nav.disabled {
     // display: flex !important;
   }
   h3 {
     font-size: 62px;
-    padding-top: 90px;
+    padding-top: 20px;
     text-align: center;
     position: relative;
     margin-top: 80px;
@@ -515,6 +521,19 @@ footer {
   }
 }
 
+// .owl-carousel-about {
+// position: relative;
+.aboutUs {
+  position: relative;
+}
+.flag {
+  position: absolute;
+  top: 3%;
+  max-width: 39vw;
+  right: 17%;
+}
+// }
+
 .socialList {
   margin-top: 30px;
   a {
@@ -742,12 +761,28 @@ footer {
     height: unset;
   }
 }
-
+.sliderSection .container {
+  max-width: 1000px;
+}
 @media only screen and (max-width: 1369px) {
   .fistSection .container {
     padding-top: 50px;
   }
+  .flag {
+    position: absolute;
+    top: 2%;
+    max-width: 56vw;
+    right: 3%;
+  }
 
+  .sliderSection {
+    .shild {
+      max-width: 44vw;
+    }
+  }
+  .sliderSection .container {
+    max-width: 1000px;
+  }
   .partners .bgPrtner {
     max-width: 355px;
     right: 0%;
@@ -888,7 +923,7 @@ footer {
   [data-aos="bottomToTop4"] {
     animation-duration: 1s;
     // animation-delay: 0.4s;
-    transform: translate(-20%, 20%);
+    transform: translate(-30%, 30%);
     opacity: 0;
     animation-fill-mode: forwards;
     &.aos-animate {
@@ -913,10 +948,23 @@ footer {
   [data-aos="teamAnimatin"] {
     .owl-stage-outer {
       animation-fill-mode: forwards;
-      transform: translate(-10%, 20%);
+      transform: translate(0%, 100%);
+
       animation-delay: 0.2s;
     }
+    .flag {
+      animation-fill-mode: forwards;
+      transform: translate(0%, 100%);
+
+      animation-delay: 0.2s;
+    }
+
     &.aos-animate {
+      .flag {
+        animation-duration: 1s;
+        animation-name: bottomToTop;
+        animation-timing-function: ease-out;
+      }
       .owl-stage-outer {
         animation-duration: 1s;
         animation-name: bottomToTop;
@@ -948,7 +996,7 @@ footer {
     }
     .owl-stage-outer {
       animation-fill-mode: forwards;
-      transform: translate(-10%, 20%);
+      transform: translate(-40%, 30%) scale(0.8);
     }
     &.aos-animate {
       .owl-nav {
@@ -957,8 +1005,8 @@ footer {
         animation-timing-function: ease-out;
       }
       .owl-stage-outer {
-        animation-duration: 1s;
-        animation-name: bottomToTop4;
+        animation-duration: 1.4s;
+        animation-name: bottomToTop5;
         animation-timing-function: ease-out;
       }
     }
@@ -971,6 +1019,29 @@ footer {
     animation-fill-mode: forwards;
     &.aos-animate {
       animation-name: socialAnimation;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="shild"] {
+    animation-duration: 0.6s;
+    transform: scale(0) rotate(90deg);
+    animation-delay: 0.4s;
+
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: socialAnimation;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  [data-aos="shildAnimate"] {
+    animation-duration: 2s;
+    transform: perspective(29px) rotateY(49deg);
+
+    animation-fill-mode: forwards;
+    &.aos-animate {
+      animation-name: shildAnimate;
       animation-timing-function: ease-out;
     }
   }
@@ -1056,11 +1127,22 @@ footer {
 
 @keyframes bottomToTop4 {
   from {
-    transform: translate(-10%, 20%);
+    transform: translate(-30%, 30%);
     opacity: 0;
   }
   to {
     transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomToTop5 {
+  from {
+    transform: translate(-50%, 30%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0) scale(1);
     opacity: 1;
   }
 }
@@ -1071,5 +1153,14 @@ footer {
   }
   to {
     transform: rotate(0deg) translateY(0px);
+  }
+}
+
+@keyframes shildAnimate {
+  from {
+    transform: perspective(29px) rotateY(49deg);
+  }
+  to {
+    transform: perspective(0px) rotateY(0deg);
   }
 }

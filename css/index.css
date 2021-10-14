@@ -170,16 +170,22 @@ a.nav-link {
     font-weight: 400;
     font-family: "Euclid Circular B", sans-serif; }
 
-.sliderSection h3 {
-  font-size: 62px;
-  padding-top: 90px;
-  text-align: center;
-  position: relative;
-  margin-top: 80px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #fff;
-  text-align: left; }
+.sliderSection {
+  margin-top: 30px;
+  position: relative; }
+  .sliderSection .shild {
+    position: absolute;
+    max-width: 34vw; }
+  .sliderSection h3 {
+    font-size: 62px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: left; }
 
 #timer {
   font-size: 32px;
@@ -391,6 +397,15 @@ footer {
       cursor: pointer;
       transform: translateY(3px); }
 
+.aboutUs {
+  position: relative; }
+
+.flag {
+  position: absolute;
+  top: 3%;
+  max-width: 39vw;
+  right: 17%; }
+
 .socialList {
   margin-top: 30px; }
   .socialList a {
@@ -547,9 +562,21 @@ footer {
   .roadMap-card {
     height: unset; } }
 
+.sliderSection .container {
+  max-width: 1000px; }
+
 @media only screen and (max-width: 1369px) {
   .fistSection .container {
     padding-top: 50px; }
+  .flag {
+    position: absolute;
+    top: 2%;
+    max-width: 56vw;
+    right: 3%; }
+  .sliderSection .shild {
+    max-width: 44vw; }
+  .sliderSection .container {
+    max-width: 1000px; }
   .partners .bgPrtner {
     max-width: 355px;
     right: 0%;
@@ -645,7 +672,7 @@ footer {
       animation-timing-function: ease-out; }
   [data-aos="bottomToTop4"] {
     animation-duration: 1s;
-    transform: translate(-20%, 20%);
+    transform: translate(-30%, 30%);
     opacity: 0;
     animation-fill-mode: forwards; }
     [data-aos="bottomToTop4"].aos-animate {
@@ -661,8 +688,16 @@ footer {
       animation-timing-function: ease-out; }
   [data-aos="teamAnimatin"] .owl-stage-outer {
     animation-fill-mode: forwards;
-    transform: translate(-10%, 20%);
+    transform: translate(0%, 100%);
     animation-delay: 0.2s; }
+  [data-aos="teamAnimatin"] .flag {
+    animation-fill-mode: forwards;
+    transform: translate(0%, 100%);
+    animation-delay: 0.2s; }
+  [data-aos="teamAnimatin"].aos-animate .flag {
+    animation-duration: 1s;
+    animation-name: bottomToTop;
+    animation-timing-function: ease-out; }
   [data-aos="teamAnimatin"].aos-animate .owl-stage-outer {
     animation-duration: 1s;
     animation-name: bottomToTop;
@@ -680,14 +715,14 @@ footer {
     transform: translate(10%, 20%); }
   [data-aos="designAnimate"] .owl-stage-outer {
     animation-fill-mode: forwards;
-    transform: translate(-10%, 20%); }
+    transform: translate(-40%, 30%) scale(0.8); }
   [data-aos="designAnimate"].aos-animate .owl-nav {
     animation-duration: 1s;
     animation-name: bottomToTop3;
     animation-timing-function: ease-out; }
   [data-aos="designAnimate"].aos-animate .owl-stage-outer {
-    animation-duration: 1s;
-    animation-name: bottomToTop4;
+    animation-duration: 1.4s;
+    animation-name: bottomToTop5;
     animation-timing-function: ease-out; }
   [data-aos="socialAnimation"] {
     animation-duration: 0.6s;
@@ -696,6 +731,21 @@ footer {
     animation-fill-mode: forwards; }
     [data-aos="socialAnimation"].aos-animate {
       animation-name: socialAnimation;
+      animation-timing-function: ease-out; }
+  [data-aos="shild"] {
+    animation-duration: 0.6s;
+    transform: scale(0) rotate(90deg);
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards; }
+    [data-aos="shild"].aos-animate {
+      animation-name: socialAnimation;
+      animation-timing-function: ease-out; }
+  [data-aos="shildAnimate"] {
+    animation-duration: 2s;
+    transform: perspective(29px) rotateY(49deg);
+    animation-fill-mode: forwards; }
+    [data-aos="shildAnimate"].aos-animate {
+      animation-name: shildAnimate;
       animation-timing-function: ease-out; } }
 
 @keyframes bottomLine {
@@ -756,10 +806,18 @@ footer {
 
 @keyframes bottomToTop4 {
   from {
-    transform: translate(-10%, 20%);
+    transform: translate(-30%, 30%);
     opacity: 0; }
   to {
     transform: translate(0);
+    opacity: 1; } }
+
+@keyframes bottomToTop5 {
+  from {
+    transform: translate(-50%, 30%) scale(0.8);
+    opacity: 0; }
+  to {
+    transform: translate(0) scale(1);
     opacity: 1; } }
 
 @keyframes animanim {
@@ -767,3 +825,9 @@ footer {
     transform: rotate(-8deg) translateY(60px); }
   to {
     transform: rotate(0deg) translateY(0px); } }
+
+@keyframes shildAnimate {
+  from {
+    transform: perspective(29px) rotateY(49deg); }
+  to {
+    transform: perspective(0px) rotateY(0deg); } }
