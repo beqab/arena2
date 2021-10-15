@@ -1,5 +1,5 @@
-@import url("http://fonts.cdnfonts.com/css/evil-empire");
-@import url("http://fonts.cdnfonts.com/css/euclid-circular-b");
+@import url("https://fonts.cdnfonts.com/css/evil-empire");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
 
 $Evil-Empire: "Evil Empire", sans-serif;
 $Euclid-Circular: "Euclid Circular B", sans-serif;
@@ -40,6 +40,16 @@ h1 {
 
 * {
   font-family: $Evil-Empire;
+}
+.DiscoverBtn {
+  position: relative;
+  div {
+    position: absolute;
+    color: #fff;
+    font-size: 22px;
+    top: 21px;
+    left: 45px;
+  }
 }
 a.nav-link {
   font-size: 24px;
@@ -668,6 +678,9 @@ footer {
 @media only screen and (max-width: 779px) {
   .menuWrapper {
     background: #492626 !important;
+  }
+  .socialListFooter {
+    width: fit-content;
   }
   .roadMap-card {
     margin-bottom: 30px;
