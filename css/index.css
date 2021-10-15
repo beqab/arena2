@@ -122,7 +122,7 @@ a.nav-link {
   .roadMap-card {
     background: linear-gradient(#fbef7f, #c3780a);
     border-radius: 5px;
-    height: 303px;
+    height: 351px;
     background-size: 100% 100%;
     padding: 10px;
     position: relative; }
@@ -177,7 +177,7 @@ a.nav-link {
       color: #c58510; }
   .presale h3 {
     font-size: 62px;
-    padding-top: 90px;
+    padding-top: 130px;
     text-align: center;
     position: relative;
     margin-top: 80px;
@@ -361,6 +361,15 @@ a.nav-link {
   padding-top: 120px;
   padding-bottom: 240px;
   position: relative; }
+  .partners .partnersLink {
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #ffffff00;
+    margin: auto; }
   .partners .bgPrtner {
     position: absolute;
     right: -6%;
@@ -613,7 +622,7 @@ footer {
   .cnight2 {
     max-width: 80% !important; }
   .presale h3 {
-    padding-top: 0; }
+    padding-top: 100px; }
   .owl-carousel .owl-item img {
     max-height: 500px;
     object-fit: cover; } }
