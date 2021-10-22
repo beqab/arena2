@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/index.scss css/index.css -w"
+    "compile:sass": "node-sass scss/index.scss css/index2.css -w"
   },
   "author": "",
   "license": "ISC",

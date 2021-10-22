@@ -1,881 +1,579 @@
-@import url("https://fonts.cdnfonts.com/css/evil-empire");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
-button:focus {
-  outline: none;
-  border: none;
-  box-shadow: none; }
+@import url(//db.onlinewebfonts.com/c/1868e326d3ee28e5395f6efa2bc037bf?family=Eina01-Regular);
+@font-face {
+  font-family: "Eina01-Regular";
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot");
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff") format("woff"), url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.svg#Eina01-Regular") format("svg"); }
 
-html {
-  overflow-x: hidden; }
+.logoFilter {
+  filter: drop-shadow(8px 6px 17px rgba(0, 0, 0, 0.5)); }
+
+a:hover {
+  text-decoration: none; }
+
+.arrows {
+  transform: translateY(29px); }
+  .arrows a {
+    color: #001f2b;
+    font-size: 18px;
+    font-weight: bold; }
 
 body {
-  background: #1f0f0f; }
+  font-family: "Eina01-Regular";
+  margin: 0; }
 
-body {
-  overflow-x: hidden; }
-
-h1 {
-  color: red;
-  font-family: "Evil Empire", sans-serif; }
-
-* {
-  font-family: "Evil Empire", sans-serif; }
-
-.DiscoverBtn {
-  position: relative; }
-  .DiscoverBtn div {
-    position: absolute;
-    color: #fff;
-    font-size: 22px;
-    top: 21px;
-    left: 45px; }
-
-a.nav-link {
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Evil Empire", sans-serif;
-  margin-left: 15px;
-  display: inline-block; }
-  a.nav-link.active {
-    color: #fff; }
-  a.nav-link:hover {
-    color: #fff;
-    transition: 0.3s; }
-
-.fistSection {
-  background: url("../imgs/bg11.svg");
-  min-height: 100vh;
-  background-position: 35% 15%;
-  background-repeat: no-repeat; }
-  .fistSection .container {
-    padding-top: 100px; }
-  .fistSection h2 {
-    font-size: 76px;
-    font-weight: 400;
-    color: #fff; }
-    .fistSection h2 span {
-      color: #c58510; }
-  .fistSection p {
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 40px;
-    margin-top: 30px;
-    font-family: "Euclid Circular B", sans-serif; }
-
-.sliderArrow {
-  width: 57px;
-  height: 57px;
-  border-radius: 57px;
-  border: 2px solid #c58510;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .sliderArrow.right {
-    margin-left: 15px; }
-    .sliderArrow.right svg {
-      transform: rotate(180deg); }
-  .sliderArrow:hover {
-    border: none;
-    background: linear-gradient(#cebe2d, #c3780a); }
-    .sliderArrow:hover svg path {
-      fill: #000; }
-  .sliderArrow svg {
-    height: 14px; }
-
-.sectionTwo {
-  background: url("../imgs/bg1.png");
-  min-height: 100vh;
+#cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #141526;
+  z-index: 9999;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 200px;
   color: #fff;
+  font-family: tahoma; }
+
+.vimeo-container {
+  background: #49416d;
+  position: relative; }
+  .vimeo-container::before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 68, 68, 0);
+    content: "";
+    z-index: 14; }
+
+.contactPageForm {
+  max-width: 450px;
+  width: 100%; }
+  .contactPageForm input {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
+    .contactPageForm input::placeholder {
+      color: #fff; }
+  .contactPageForm button {
+    background-color: #fff;
+    padding: 4px 24px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: darkcyan;
+    color: #00415a; }
+
+.vimeo-container {
+  padding: 0;
+  width: 100%;
+  height: calc(100vw * 0.39);
+  overflow: hidden;
+  position: relative; }
+
+iframe.video {
+  box-sizing: border-box;
+  width: 177.77777778vh;
+  height: 56.25vw;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header {
+  background: #49416d;
+  position: fixed;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  top: 0; }
+  .header li {
+    position: relative; }
+  .header a {
+    color: #fff;
+    font-family: "Eina01-Regular";
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s; }
+    .header a::after {
+      transition: all 0.3s;
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 40px;
+      z-index: 3;
+      left: 50%;
+      bottom: -13px;
+      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%); }
+    .header a.active::after, .header a:hover::after {
+      background: #fff; }
+
+.partners {
+  padding-top: 140px; }
+  .partners img {
+    max-width: 100%; }
+
+.service {
+  padding-top: 120px; }
+  .service img {
+    max-height: 430px;
+    max-width: 100%; }
+
+.service__title {
+  color: #001f2b;
+  font-weight: 28px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.service__plus {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #49416d;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  padding-top: 90px;
-  position: relative; }
-  .sectionTwo p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1px; }
-  .sectionTwo h3 {
-    font-size: 72px;
-    margin-top: 60px;
-    position: relative; }
-    .sectionTwo h3:before {
-      position: absolute;
-      height: 8px;
-      width: 110px;
-      background: #fff;
-      bottom: -20px;
-      left: 0px;
-      content: ""; }
-
-.roadMap {
-  position: relative;
-  min-height: 100vh;
   color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(128deg, #684b9d, #e5284e);
+  transition: all 0.3s;
+  margin: auto; }
+  .service__plus:hover {
+    box-shadow: 2px 5px 11px 0px #06000063; }
+
+.OurGames {
+  padding-top: 120px;
+  position: relative; }
+  .OurGames a {
+    color: #001f2b; }
+  .OurGames .owl-carousel h4 {
+    font-weight: bold; }
+  .OurGames .owl-carousel img {
+    max-height: 300px; }
+    .OurGames .owl-carousel img.slider-img {
+      height: 100%;
+      width: auto; }
+  .OurGames .left-arrow {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .OurGames .right-arrow {
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+#aboutUs {
+  padding-top: 120px; }
+
+.modalImg {
+  height: 200px;
+  background-position: center;
+  border-bottom: 1px solid;
+  background-size: cover; }
+  .modalImg.BRANDING {
+    background-image: url("../imgs/BRANDING.png"); }
+  .modalImg.gaming_apps {
+    background-image: url("../imgs/GAMING APPS.png"); }
+  .modalImg.content_creation {
+    background-image: url("../imgs/Video Content Creation.png"); }
+  .modalImg.INFLUENCER {
+    background-image: url("../imgs/INFLUENCER MARKETING.png"); }
+  .modalImg.THROUGH_GAMEIFICATION {
+    background-image: url("../imgs/Marketing through gamification.png"); }
+  .modalImg.D_ANIMATIONS {
+    background-image: url("../imgs/2D & 3D ANIMATION.png"); }
+
+.All-games {
+  display: none; }
+  .All-games img {
+    max-width: 100%; }
+
+#seeAll {
+  font-size: 18px;
+  color: #00719c;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.aboutUs {
+  background-color: linear-gradient(128deg, #684b9d, #e5284e);
+  background-image: url("../imgs/Team Final.png");
+  object-fit: cover;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding-bottom: 30px; }
+  .aboutUs::before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(128deg, #684b9deb, #e5284ef2);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .aboutUs .investment,
+  .aboutUs .CareersContent {
+    position: relative;
+    color: #fff;
+    margin-top: 7%;
+    text-transform: capitalize; }
+    .aboutUs .investment h3,
+    .aboutUs .CareersContent h3 {
+      display: inline-block;
+      text-transform: capitalize;
+      margin: auto;
+      padding-bottom: 10px;
+      font-weight: bold;
+      border-bottom: 2px solid;
+      margin-bottom: 20px; }
+  .aboutUs__tabs {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0; }
+    .aboutUs__tabs li {
+      width: 190px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 10px;
+      color: #49416d;
+      background: #fff;
+      transition: 0.3s;
+      cursor: pointer; }
+      .aboutUs__tabs li.active, .aboutUs__tabs li:hover {
+        background: #49416d;
+        color: #fff; }
+  .aboutUs__team-memeber {
+    height: 240px;
+    color: #fff; }
+    .aboutUs__team-memeber img {
+      max-width: 100%;
+      max-height: 180px;
+      max-width: 180px;
+      max-height: 180px;
+      object-fit: cover;
+      filter: grayscale(100%); }
+    .aboutUs__team-memeber h5 {
+      margin-top: 8px;
+      font-size: 18px;
+      margin-bottom: 0px; }
+    .aboutUs__team-memeber div {
+      font-size: 14px; }
+
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: linear-gradient(98deg, #684b9d, #e5284e); }
+  #toTopBtn svg {
+    height: 30px;
+    color: #fff; }
+
+.containerFOrm {
+  background: linear-gradient(98deg, #684b9d, #e5284e); }
+
+.containerContact {
+  position: absolute;
+  left: 54%;
+  top: 20px;
+  transform: translateX(-50%); }
+
+.footer {
+  background-color: #49416d;
+  color: #fff;
+  padding: 32px 0; }
+  .footer__menus-section a {
+    display: block;
+    color: #fff;
+    height: 22.5px;
+    margin-bottom: 6px;
+    text-transform: capitalize; }
+  .footer label {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px; }
+  .footer__socials a {
+    display: inline-block;
+    margin-right: 16px; }
+
+.heading {
+  color: #001f2b;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #009bd6;
+  position: relative; }
+  .heading:before {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #684b9d, #e5284e);
+    content: "";
+    bottom: -3px; }
+
+.responsiveMenu {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 100;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .roadMap .bgImg {
-    position: absolute;
-    right: -6%;
-    z-index: 1;
-    width: 45vw; }
-  .roadMap h3 {
-    font-size: 72px;
-    margin-top: 60px;
+  .responsiveMenu li {
     text-align: center;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 50px; }
-  .roadMap-card {
-    background: linear-gradient(#fbef7f, #c3780a);
-    border-radius: 5px;
-    height: 351px;
-    background-size: 100% 100%;
-    padding: 10px;
-    position: relative; }
-    .roadMap-card:before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 36px;
-      width: 168px;
-      background: url("../imgs/cardIMg.svg");
-      background-size: 100%;
-      top: -10px; }
-    .roadMap-card > div {
-      background: linear-gradient(#915e3f, #6a473c);
-      border-radius: 5px;
-      padding: 5px;
-      height: 100%;
-      padding: 30px; }
-    .roadMap-card h5 {
-      font-size: 26px;
-      margin-bottom: 20px; }
-    .roadMap-card .listItem {
-      font-size: 18px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center; }
-      .roadMap-card .listItem img {
-        display: inline-block;
-        margin-right: 10px;
-        width: 18px; }
-
-.presale {
-  min-height: 100vh;
-  padding-top: 180px;
-  background-repeat: no-repeat;
-  background-position: 30%; }
-  .presale_card {
-    background: url("../imgs/presaleImg.svg");
-    width: 100px;
-    background-size: cover;
-    width: 226px;
-    height: 116px;
-    background-size: 100%;
-    margin: 14px 10px;
-    padding: 20px; }
-    .presale_card .value {
+    margin-bottom: 12px; }
+    .responsiveMenu li a {
       font-size: 30px;
-      color: #fff; }
-    .presale_card .label {
-      font-size: 16px;
-      color: #c58510; }
-  .presale h3 {
-    font-size: 62px;
-    padding-top: 130px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: left; }
-  .presale p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Euclid Circular B", sans-serif; }
-
-.sliderSection {
-  margin-top: 30px;
-  position: relative; }
-  .sliderSection .shild {
+      color: #001f2b; }
+  .responsiveMenu img {
     position: absolute;
-    max-width: 34vw; }
-  .sliderSection h3 {
-    font-size: 62px;
-    padding-top: 20px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: left; }
-
-#timer {
-  font-size: 32px;
-  flex-direction: column;
-  margin-top: 60px; }
-  #timer .timerLabels {
-    display: flex;
-    color: #fff;
-    font-size: 21px;
-    text-transform: uppercase;
-    margin-top: 10px; }
-    #timer .timerLabels > div {
-      width: 70px;
-      margin: 0 10px;
-      text-align: center; }
-  #timer .dot {
-    color: #c58510;
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    align-items: center; }
-  #timer .timerWrapper {
-    display: flex; }
-    #timer .timerWrapper > div {
-      background: rgba(255, 255, 255, 0.1);
-      height: 60px;
-      color: #c58510;
-      margin: 0px 10px;
-      border-radius: 20px;
-      min-width: 64px;
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-
-.sliderSection {
-  padding-top: 120px;
-  min-height: 100vh; }
-  .sliderSection h3 {
-    padding-left: 20px; }
-  .sliderSection .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px; }
-
-.sliderItemWrapper {
-  width: 1120px;
-  background-image: linear-gradient(#fbef7f, #c3780a);
-  border-radius: 10px;
-  position: relative; }
-  .sliderItemWrapper .owl-nav {
-    position: absolute; }
-  .sliderItemWrapper:after {
-    background: url("../imgs/topRight.svg");
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    content: "";
-    background-size: 100%;
-    width: 81px;
-    height: 76px; }
-  .sliderItemWrapper::before {
-    background: url("../imgs/bottomleft.svg");
-    position: absolute;
-    left: -10px;
-    bottom: -10px;
-    content: "";
-    background-size: 100%;
-    width: 81px;
-    height: 76px; }
-  .sliderItemWrapper > img {
-    padding: 14px;
-    width: 100%;
-    height: 100%; }
-
-.sliderSection_owl .owl-nav {
-  position: absolute;
-  top: -130px;
-  right: 0; }
-  .sliderSection_owl .owl-nav button:active {
-    outline: none;
-    border: none; }
-  .sliderSection_owl .owl-nav svg {
-    width: 60px;
-    transition: 0.2s; }
-    .sliderSection_owl .owl-nav svg:hover {
-      fill: #e3bb4c; }
-    .sliderSection_owl .owl-nav svg.right {
-      transform: rotate(180deg);
-      margin-left: 20px; }
-
-.tokenomics {
-  padding-top: 120px;
-  min-height: 60vh; }
-  .tokenomics h3 {
-    font-size: 62px;
-    padding-top: 90px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: left; }
-
-.aboutUs {
-  background: #1f0f0f;
-  padding-top: 120px;
-  padding-bottom: 137px; }
-  .aboutUs h3 {
-    font-size: 62px;
-    padding-top: 90px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: left; }
-  .aboutUs .item {
-    padding-top: 20px; }
-    .aboutUs .item h5 {
-      color: #fff;
-      font-size: 24px;
-      margin-top: 19px;
-      font-weight: 400;
-      margin-bottom: 0px; }
-    .aboutUs .item p {
-      color: #c58510;
-      font-weight: 400; }
-  .aboutUs .aboutUs_sliderItemWrapper {
-    background-image: linear-gradient(#fbef7f, #c3780a);
-    border-radius: 8px;
-    position: relative;
+    right: 30px;
+    top: 10px;
     cursor: pointer; }
-    .aboutUs .aboutUs_sliderItemWrapper::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: -6px;
-      background: url("../imgs/aboutSlider.svg");
-      background-size: 100%;
-      transform: translateX(-50%);
-      height: 30px;
-      width: 131px; }
-    .aboutUs .aboutUs_sliderItemWrapper img {
-      padding: 10px; }
 
-.partners {
-  background: #1f0f0f;
-  padding-top: 120px;
-  padding-bottom: 240px;
-  position: relative; }
-  .partners .partnersLink {
-    height: 150px;
-    width: 150px;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background: #ffffff00;
-    margin: auto; }
-  .partners .bgPrtner {
-    position: absolute;
-    right: -6%;
-    top: -20%;
-    width: 35vw; }
-  .partners h3 {
-    font-size: 62px;
-    padding-top: 90px;
-    text-align: center;
-    position: relative;
-    margin-top: 80px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: #fff;
-    text-align: left; }
-
-footer {
-  background: #1f0f0f;
-  padding-bottom: 100px; }
-  footer label {
-    color: #fff;
-    font-size: 29px; }
-  footer .footerLinks {
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-    margin-top: 40px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-between; }
-    footer .footerLinks a,
-    footer .footerLinks span {
-      color: #fff;
-      font-family: "Euclid Circular B", sans-serif;
-      font-size: 17px;
-      margin-right: 30px; }
-    footer .footerLinks span {
-      margin-right: 0; }
-  footer .sub input {
-    background-color: rgba(197, 133, 16, 0.1);
-    height: 60px;
-    border: none;
-    padding-left: 24px;
-    font-family: "Euclid Circular B", sans-serif;
-    display: inline-block;
-    max-width: 300px;
-    width: 100%;
-    height: 54px;
-    margin-right: 20px;
-    color: #fff;
-    border-radius: 2px; }
-  footer .sub form {
-    display: flex;
-    align-items: center;
-    margin-top: 20px; }
-    footer .sub form svg {
-      width: 241px;
-      cursor: pointer;
-      transform: translateY(3px); }
-
-.aboutUs {
-  position: relative; }
-
-.flag {
-  position: absolute;
-  top: 3%;
-  max-width: 39vw;
-  right: 17%; }
-
-.socialList {
-  margin-top: 30px; }
-  .socialList a {
-    display: inline-block;
-    margin-right: 25px; }
-    .socialList a > svg {
-      height: 48px; }
-
-.menuWrapper {
+.ServiceModal__wraper {
   position: fixed;
-  z-index: 10;
-  width: 100%;
-  left: 0px;
-  z-index: 3;
-  top: 0px; }
-  .menuWrapper.scroll {
-    background: #1f0f0f;
-    transition: 0.3s; }
-    .menuWrapper.scroll .navbar-brand img {
-      transition: 0.3s;
-      max-width: 90px !important; }
-  .menuWrapper .navbar-brand img {
-    transition: 0.3s; }
-  .menuWrapper .navbar {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important; }
-
-@media only screen and (max-width: 1184px) {
-  .fistSection h2 {
-    font-size: 58px; } }
-
-@media only screen and (max-width: 975px) {
-  .fistSection h2 {
-    font-size: 42px; }
-  a.nav-link {
-    font-size: 19px; }
-  .sectionTwo p {
-    font-size: 16px; }
-  .sectionTwo h3 {
-    font-size: 58px; }
-  .roadMap .container {
-    max-width: 920px !important; }
-  .roadMap-card .listItem {
-    font-size: 13px;
-    margin-bottom: 5px; }
-  #timer .timerLabels {
-    font-size: 16px; }
-  #timer {
-    align-items: center; }
-  .sliderItemWrapper:after,
-  .sliderItemWrapper::before {
-    width: 47px;
-    height: 43px; }
-  .presale_cards {
-    max-width: 500px;
-    margin: auto; }
-  .partners {
-    padding-top: 20px; } }
-
-@media only screen and (max-width: 779px) {
-  .menuWrapper {
-    background: #492626 !important; }
-  .socialListFooter {
-    width: fit-content; }
-  .roadMap-card {
-    margin-bottom: 30px; }
-  .navbar-collapse.show .bottomLines {
-    background-image: linear-gradient(#fbef7f, #c3780a);
-    height: 50px;
-    width: calc(100% + 30px);
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 120; }
+  .ServiceModal__wraper .closeModal {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: -15px;
-    margin-right: -15px; }
-    .navbar-collapse.show .bottomLines::before {
-      content: "";
-      left: 0px;
-      bottom: 0px;
-      position: absolute;
-      width: 128px;
-      height: 113px;
-      background: url("../imgs/menuImg.svg"); }
-    .navbar-collapse.show .bottomLines::after {
-      content: "";
-      right: -3px;
-      bottom: 0px;
-      position: absolute;
-      width: 128px;
-      height: 113px;
-      background: url("../imgs/menuimg2.svg"); }
-  .navbar-nav {
-    padding-bottom: 67px; }
+    top: 74px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 324;
+    background: #fff9;
+    padding: 3px;
+    border-radius: 5px;
+    width: 36px; }
+
+.modalWrapper {
+  margin: auto; }
+
+.ServiceModal {
+  position: relative;
+  width: 90%;
+  z-index: 200;
+  margin: auto;
+  margin-top: 60px;
+  max-width: 1140px;
+  height: auto;
+  background: #fff;
+  text-align: center;
+  color: #00415a;
+  overflow-y: auto;
+  max-height: 90vh;
+  box-shadow: 1px 3px 18px 6px #88888854;
+  border-radius: 8px;
+  text-align: center;
+  color: #00415a; }
+  .ServiceModal img {
+    width: calc(100%);
+    object-fit: cover; }
+  .ServiceModal__title {
+    color: #707070;
+    font-size: 20px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .ServiceModal p {
+    margin-left: 20px;
+    margin-right: 20px; }
+
+.games .header {
+  background: none;
+  position: relative; }
+
+.games .headerWrapper {
+  background: linear-gradient(#77d9ff, #0094cc);
+  color: #fff; }
+  .games .headerWrapper h3 {
+    margin-top: 90px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold; }
+
+.aboutGame {
+  color: #001f2b; }
+  .aboutGame h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .aboutGame ul {
+    list-style: none;
+    /* Remove default bullets */
+    margin-left: 0;
+    padding-left: 15px; }
+    .aboutGame ul li {
+      margin-bottom: 4px; }
+  .aboutGame ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #009bd6;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */ }
+
+.box {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%; }
+
+.box .front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: 1s; }
+
+/* hide back of pane during swap */
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*  UPDATED! front pane, placed above back */
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+
+.box:hover .front {
+  transform: perspective(1000px) rotateY(180deg); }
+
+.box .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1000px) rotateY(-180deg);
+  transition: 1s; }
+
+.box:hover .back {
+  transform: perspective(1000px) rotateY(0deg); }
+
+/**********  front  **************/
+.box .front .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.box .front .center img {
+  width: 100px;
+  height: 100px; }
+
+/**********  back  **************/
+.box .back .row {
+  position: relative;
+  width: 100%;
+  height: 50%; }
+
+@media only screen and (max-width: 800px) {
+  .modalImg {
+    height: 104px; }
+  .ServiceModal__wraper .closeModal {
+    top: 61px;
+    right: 44px;
+    background: #ffffffe8; }
+  .service.mobile .serviceItemMobile {
+    cursor: pointer; }
+  .service.mobile img {
+    max-height: 216px;
+    margin-bottom: 10px; }
+  .footer__socials a img {
+    width: 30px; }
   .OurGames .owl-carousel img.slider-img {
     width: 90%; }
-  footer .sub form {
-    flex-direction: column; }
-    footer .sub form input {
-      margin-bottom: 15px;
-      margin-right: 0; }
-  footer label {
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    text-align: center;
-    display: block; }
-  .footerLinks {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    .footerLinks > div {
-      margin-bottom: 15px; }
-      .footerLinks > div a {
-        display: block; }
-  footer {
-    padding-bottom: 40px; }
-  h3 {
-    font-size: 40px !important;
-    text-align: center !important; }
-  .aboutUs {
-    padding-top: 20px; }
+  .aboutUs__team-memeber img {
+    max-width: 165px; }
+  .aboutUs .investment,
+  .aboutUs .CareersContent {
+    padding: 0 10px; }
+  .header {
+    background: #fff; }
+  .vimeo-container {
+    margin-top: 78px !important;
+    height: calc(100vw * 0.39); }
+    .vimeo-container iframe {
+      width: 100%; }
   .partners {
-    padding-top: 20px; }
-  .tokenomics {
-    padding-top: 30px; }
-  .timerBlock {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .knitSvg {
-    max-width: 100% !important; }
-  .fistSection h2 {
-    font-size: 55px;
-    text-align: center; }
-  a.nav-link {
-    font-size: 22px;
-    padding-top: 0; }
-  .navbar-nav {
-    text-align: center; }
-  .sectionTwo h3 {
-    margin-bottom: 40px; }
-  .sectionTwo h3:before {
+    padding-top: 70px; }
+  .service__title {
+    font-size: 14px; }
+  .left-arrow {
     display: none; }
-  .sliderSection_owl .owl-nav svg {
-    width: 40px;
-    transition: 0.2s; }
-  .sliderSection_owl .owl-nav {
-    position: absolute;
-    top: -66px;
-    right: 0; }
-  section {
-    min-height: unset !important; }
-  .roadMap-card .listItem {
-    font-size: 16px;
+  .right-arrow {
+    display: none; }
+  .footer label {
+    font-size: 15px; }
+  .footer__menus-section a {
+    font-size: 11px;
     margin-bottom: 6px; }
-  .roadMap-card {
-    height: unset; } }
+  .footer__socials {
+    margin-bottom: 20px; }
+  .OurGames h4 {
+    font-size: 13px;
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
+  .OurGames .title1 {
+    margin-left: 25px !important; }
+  .OurGames .title2 {
+    margin-right: 15px !important; }
+  .OurGames .title3 {
+    margin-right: 25px !important; } }
 
-.sliderSection .container {
-  max-width: 1000px; }
-
-.socialIcon {
-  position: relative;
-  z-index: 1; }
-
-@media only screen and (max-width: 1369px) {
-  .fistSection .container {
-    padding-top: 50px; }
-  .flag {
-    position: absolute;
-    top: 2%;
-    max-width: 56vw;
-    right: 3%; }
-  .sliderSection .shild {
-    max-width: 44vw; }
-  .sliderSection .container {
-    max-width: 1000px; }
-  .partners .bgPrtner {
-    max-width: 355px;
-    right: 0%;
-    top: 10%; }
-  .knitSvg {
-    max-width: 100% !important;
-    margin-left: auto; }
-  .cnight2 {
-    max-width: 80% !important; }
-  .presale h3 {
-    padding-top: 100px; }
-  .owl-carousel .owl-item img {
-    max-height: 500px;
-    object-fit: cover; } }
-
-@media only screen and (max-width: 768px) {
-  .fistSection .container {
-    padding-top: 90px; } }
-
-@media only screen and (max-width: 479px) {
-  .roadMap-card {
-    padding: 0; }
-    .roadMap-card > div {
-      padding: 30px; }
-  .roadMap-card h5 {
-    font-size: 18px;
-    margin-bottom: 7px;
-    margin-top: 30px; } }
-
-@media only screen and (min-width: 1079px) {
-  [data-aos="example-anim3"] {
-    opacity: 0;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    transform: translateX(100%);
-    opacity: 0;
-    animation-timing-function: ease-out; }
-    [data-aos="example-anim3"].dely2 {
-      animation-delay: 0.2s; }
-    [data-aos="example-anim3"].aos-animate {
-      animation-timing-function: ease-out;
-      animation-name: comesRight; }
-  [data-aos="animanim"] {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    transform: rotate(-8deg) translateY(60px);
-    animation-timing-function: ease-out; }
-    [data-aos="animanim"].dely2 {
-      animation-delay: 0.2s; }
-    [data-aos="animanim"].aos-animate {
-      animation-timing-function: ease-out;
-      animation-name: animanim; }
-  [data-aos="comesLeft"] {
-    animation-duration: 1s;
-    transform: translateX(-100%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="comesLeft"].dely2 {
-      animation-delay: 0.2s; }
-    [data-aos="comesLeft"].titleText::before {
-      bottom: -92px;
-      opacity: 0; }
-    [data-aos="comesLeft"].aos-animate {
-      animation-name: comesLeft;
-      animation-timing-function: ease-out; }
-      [data-aos="comesLeft"].aos-animate.titleText::before {
-        animation-name: bottomLine;
-        animation-duration: 0.6s;
-        animation-delay: 0.4s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-out; }
-  [data-aos="bottomToTop"] {
-    animation-duration: 1s;
-    transform: translate(10%, 100%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="bottomToTop"].aos-animate {
-      animation-name: bottomToTop;
-      animation-timing-function: ease-out; }
-  [data-aos="bottomToTop2"] {
-    animation-duration: 1s;
-    transform: translate(10%, 100%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="bottomToTop2"].aos-animate {
-      animation-name: bottomToTop2;
-      animation-timing-function: ease-out; }
-  [data-aos="bottomToTop3"] {
-    animation-duration: 1s;
-    transform: translate(20%, 20%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="bottomToTop3"].aos-animate {
-      animation-name: bottomToTop3;
-      animation-timing-function: ease-out; }
-  [data-aos="bottomToTop4"] {
-    animation-duration: 1s;
-    transform: translate(-30%, 30%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="bottomToTop4"].aos-animate {
-      animation-name: bottomToTop4;
-      animation-timing-function: ease-out; }
-  [data-aos="bottomToTop2"] {
-    animation-duration: 1s;
-    transform: translate(20%, 10%);
-    opacity: 0;
-    animation-fill-mode: forwards; }
-    [data-aos="bottomToTop2"].aos-animate {
-      animation-name: bottomToTop2;
-      animation-timing-function: ease-out; }
-  [data-aos="teamAnimatin"] .owl-stage-outer {
-    animation-fill-mode: forwards;
-    transform: translate(0%, 100%);
-    animation-delay: 0.2s; }
-  [data-aos="teamAnimatin"] .flag {
-    animation-fill-mode: forwards;
-    transform: translate(0%, 100%);
-    animation-delay: 0.2s; }
-  [data-aos="teamAnimatin"].aos-animate .flag {
-    animation-duration: 1s;
-    animation-name: bottomToTop;
-    animation-timing-function: ease-out; }
-  [data-aos="teamAnimatin"].aos-animate .owl-stage-outer {
-    animation-duration: 1s;
-    animation-name: bottomToTop;
-    animation-timing-function: ease-out; }
-  [data-aos="partnersAnimate"] .owl-stage-outer {
-    animation-fill-mode: forwards;
-    transform: translate(-100%);
-    opacity: 0; }
-  [data-aos="partnersAnimate"].aos-animate .owl-stage-outer {
-    animation-duration: 1s;
-    animation-name: comesLeft;
-    animation-timing-function: ease-out; }
-  [data-aos="designAnimate"] .owl-nav {
-    animation-fill-mode: forwards;
-    transform: translate(10%, 20%); }
-  [data-aos="designAnimate"] .owl-stage-outer {
-    animation-fill-mode: forwards;
-    transform: translate(-40%, 30%) scale(0.8); }
-  [data-aos="designAnimate"].aos-animate .owl-nav {
-    animation-duration: 1s;
-    animation-name: bottomToTop3;
-    animation-timing-function: ease-out; }
-  [data-aos="designAnimate"].aos-animate .owl-stage-outer {
-    animation-duration: 1.4s;
-    animation-name: bottomToTop5;
-    animation-timing-function: ease-out; }
-  [data-aos="socialAnimation"] {
-    animation-duration: 0.6s;
-    transform: scale(0) rotate(90deg);
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards; }
-    [data-aos="socialAnimation"].aos-animate {
-      animation-name: socialAnimation;
-      animation-timing-function: ease-out; }
-  [data-aos="shild"] {
-    animation-duration: 0.6s;
-    transform: scale(0) rotate(90deg);
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards; }
-    [data-aos="shild"].aos-animate {
-      animation-name: socialAnimation;
-      animation-timing-function: ease-out; }
-  [data-aos="shildAnimate"] {
-    animation-duration: 2s;
-    transform: perspective(29px) rotateY(49deg);
-    animation-fill-mode: forwards; }
-    [data-aos="shildAnimate"].aos-animate {
-      animation-name: shildAnimate;
-      animation-timing-function: ease-out; } }
-
-@keyframes bottomLine {
-  0% {
-    bottom: -100px;
-    left: -30px;
-    opacity: 0; }
-  100% {
-    bottom: -20px;
-    left: 0px;
-    opacity: 1; } }
-
-@keyframes comesLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0; }
-  to {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes comesRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0; }
-  to {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes socialAnimation {
-  from {
-    transform: scale(0) rotate(90deg); }
-  to {
-    transform: scale(1) rotate(0deg); } }
-
-@keyframes bottomToTop {
-  from {
-    transform: translate(0%, 100%);
-    opacity: 0; }
-  to {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes bottomToTop2 {
-  from {
-    transform: translate(0%, 10%);
-    opacity: 0; }
-  to {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes bottomToTop3 {
-  from {
-    transform: translate(10%, 20%);
-    opacity: 0; }
-  to {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes bottomToTop4 {
-  from {
-    transform: translate(-30%, 30%);
-    opacity: 0; }
-  to {
-    transform: translate(0);
-    opacity: 1; } }
-
-@keyframes bottomToTop5 {
-  from {
-    transform: translate(-50%, 30%) scale(0.8);
-    opacity: 0; }
-  to {
-    transform: translate(0) scale(1);
-    opacity: 1; } }
-
-@keyframes animanim {
-  from {
-    transform: rotate(-8deg) translateY(60px); }
-  to {
-    transform: rotate(0deg) translateY(0px); } }
-
-@keyframes shildAnimate {
-  from {
-    transform: perspective(29px) rotateY(49deg); }
-  to {
-    transform: perspective(0px) rotateY(0deg); } }
+@media only screen and (max-width: 700px) {
+  .OurGames .owl-carousel img.slider-img {
+    width: 90%; } }

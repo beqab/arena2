@@ -126,17 +126,22 @@ a.nav-link {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  padding-top: 90px;
+  padding-top: 50px;
   position: relative;
+  ul li {
+    font-family: $Euclid-Circular;
+  }
+
   p {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
+    font-family: $Euclid-Circular;
   }
   h3 {
     font-size: 72px;
-    margin-top: 60px;
+    margin-top: 10px;
     position: relative;
     &:before {
       position: absolute;
@@ -385,7 +390,7 @@ a.nav-link {
 .sliderSection_owl {
   .owl-nav {
     position: absolute;
-    top: -130px;
+    top: -118px;
     right: 0;
     button {
       &:active {
@@ -518,6 +523,14 @@ a.nav-link {
   }
 }
 
+.vimdeoContainer {
+  width: 100%;
+  iframe {
+    width: 100%;
+    max-height: 500px;
+  }
+}
+
 footer {
   background: #1f0f0f;
   padding-bottom: 100px;
@@ -569,7 +582,17 @@ footer {
     }
   }
 }
-
+.owl-carousel-about {
+  .item {
+    max-width: 240px;
+    img {
+      width: 100%;
+      width: 100%;
+      object-fit: cover;
+      max-height: 220px;
+    }
+  }
+}
 // .owl-carousel-about {
 // position: relative;
 .aboutUs {
@@ -681,6 +704,22 @@ footer {
   }
   .socialListFooter {
     width: fit-content;
+  }
+  .sliderArrow {
+    width: 40px;
+    height: 40px;
+  }
+  .aboutUs .item h5 {
+    font-size: 17px;
+  }
+
+  .aboutUs .aboutUs_sliderItemWrapper img {
+    padding: 5px;
+  }
+
+  .partners {
+    padding-top: 30px;
+    padding-bottom: 90px;
   }
   .roadMap-card {
     margin-bottom: 30px;
@@ -798,8 +837,9 @@ footer {
   }
   .sliderSection_owl .owl-nav {
     position: absolute;
-    top: -66px;
-    right: 0;
+    top: -37px;
+    right: 50%;
+    transform: translateX(50%);
   }
   section {
     min-height: unset !important;
@@ -831,6 +871,9 @@ footer {
   svg {
     // width: 23px;
     // height: auto !important;
+  }
+
+  .sliderSection_owl .owl-nav {
   }
 }
 
